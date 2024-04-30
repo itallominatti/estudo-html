@@ -29,6 +29,7 @@ header h1 {
 }
 
 form {
+    padding-bottom: 64px;
     width: 750px;
     height: 1084px;
     margin: 0 auto;
@@ -108,10 +109,70 @@ h3 {
     flex-direction: column;
 }
 
-.input-container {
+.date-wrapper {
     display: flex;
+    gap: 20px;
+    width: 622px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper-300 {
-    word-wrap: 300px;
+.date-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-input input {
+    margin-top: 8px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #e6e6f0;
+    background-color: #fafafc;
+    padding: 0 20px;
+}
+
+.hora-input {
+    display: flex;
+    align-items: center;
+}
+
+.time-input {
+    margin-top: 28px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #e6e6f0;
+    background-color: #fafafc;
+    padding: 0 20px;
+}
+
+footer {
+    width: 750px;
+    height: 160px;
+    margin: 0 auto;
+    background: #535971;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer input {
+    width: 608px;
+    height: 56px;
+    font-family: 'Staatliches', cursive;
+    background-color: #ff5374;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+form {
+
 }

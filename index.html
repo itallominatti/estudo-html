@@ -16,7 +16,7 @@
         <h1>Mentoria</h1>
         <p>Preencha o formulário abaixo para <br /> agendar a sua mentoria</p>
     </header>
-    <form>
+    <form id="form">
         <div class="titulo">
             <h2>Informações Pessoais</h2>
         </div>
@@ -56,39 +56,47 @@
         </div>
         <div class="sub-title">
             <h3>Primeira Mentoria</h3>
-            <div class="input-wrapper">
-                <div class="wrapper-100">
-                    <label for="data1">Data <span>(DD/MM/AAAA)</span></label>
-                    <input type="date" id="data1" required>
-                </div>
+        </div>
+        <div class="date-wrapper">
+            <div class="date-input">
+                <label for="data">Data <span>(DD/MMM/AAAA)</span></label>
+                <input type="date" id="data" required>
             </div>
-            <div class="time">
-                <div class=""></div>
-                <label for="hora1">Das</label>
-                <input type="time" id="hora1" required>
 
-                <label for="hora2">Até</label>
-                <input type="time" id="hora2" required>
+            <div class="time-input">
+                <label for="hora">Das</label>
+                <input type="time" id="hora" required>
 
+            </div>
+            <div class="time-input">
+                <label for="hora-ate">Até</label>
+                <input type="time" id="hora-ate" required>
             </div>
         </div>
 
         <div class="sub-title">
-            <h3>Primeira Mentoria</h3>
-            <div class="date">
-                <label for="data1">Data <span>(DD/MM/AAAA)</span></label>
-                <input type="date" id="data1" required>
+            <h3>Segunda Mentoria</h3>
+        </div>
+        <div class="date-wrapper">
+            <div class="date-input">
+                <label for="data">Data <span>(DD/MMM/AAAA)</span></label>
+                <input type="date" id="data2" required>
             </div>
-            <div class="time">
-                <label for="hora1">Das</label>
-                <input type="time" id="hora1" required>
 
-                <label for="hora2">Até</label>
+            <div class="time-input">
+                <label for="hora">Das</label>
                 <input type="time" id="hora2" required>
 
             </div>
+            <div class="time-input">
+                <label for="hora-ate">Até</label>
+                <input type="time" id="hora-ate2" required>
+            </div>
         </div>
     </form>
+    <footer>
+        <input form="form" type="submit">
+    </footer>
 </body>
 
 </html>
